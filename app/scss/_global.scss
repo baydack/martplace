@@ -1,0 +1,129 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+input {
+	outline: none;
+}
+
+body {
+	font-family: "Quicksand";
+	font-weight: 400;
+	font-size: 15px;
+	height: 100%;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+.bg-i {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.btn {
+	color: #fff;
+	background-color: #0674ec;
+	border-radius: 20px;
+	padding: 9px 18px 9px 16px;
+	border: 1px solid #0674ec;
+	transition: all .4s linear;
+	&:hover {
+		color: #0674ec;
+		background-color: #fff;
+	}
+}
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 110px;
+	background-color: #fff;
+	padding: 0 30px;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	border-radius: 4px;
+	&__text {
+		font-weight: 400;
+		font-size: 30px;
+	}
+}
+.title-two {
+	font-size: 36px;
+		font-weight: 400;
+		margin-bottom: 20px;
+		text-align: center;
+		&__text {
+font-size: 16px;
+		line-height: 30px;
+		color: #555555;
+		max-width: 700px;
+		margin: 0 auto;
+		text-align: center;
+		}
+		&__blue {
+			color: #0674ec;
+		}
+}
+.arrows {
+	&__btn{
+		background-color: #7347c1;
+		border: 1px solid #7347c1;
+		width: 55px;
+		height: 45px;
+		color: #fff;
+		transition: all .3s linear;
+		&:hover {
+			background-color: transparent;
+			color: #7347c1;
+		} 
+	}
+	&__btn--right{
+		border-radius: 0 24px 24px 0;
+	}
+	&__btn--left {
+		border-radius: 24px 0px 0 24px;
+	}
+}
+
+
